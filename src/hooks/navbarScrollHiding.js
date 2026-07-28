@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useFooterNavbarAnimation(footerRef) {
+export default function navbarScrollHiding(footerRef) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {

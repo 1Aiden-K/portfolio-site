@@ -10,12 +10,20 @@ import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 
-import useFooterNavbarAnimation from "./hooks/navbarScrollAnimation.js";
+import navbarScrollHiding from "./hooks/navbarScrollHiding.js";
+import useNavbarPaddingScroll from "./hooks/navbarPaddingScroll";
+
 
 function App() {
+  //for header animations
   const footerRef = useRef(null);
 
-  const progress = useFooterNavbarAnimation(footerRef);
+  const progress = navbarScrollHiding(footerRef);
+
+  useNavbarPaddingScroll({
+    maxPadding: 24,
+    scrollDistance: 100,
+  });
 
   return (
     <div className="site">

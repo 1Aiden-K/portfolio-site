@@ -3,7 +3,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 32px var(--content-padding);
   color: var(--text);
   border-top: var(--border-width) solid var(--text);
   border-bottom: var(--border-width) solid var(--text);
