@@ -24,6 +24,7 @@ a {
 }
 .content {
   position: relative;
+  padding-top: 90px;
 }
 
 .content::before {

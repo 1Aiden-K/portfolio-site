@@ -1,8 +1,13 @@
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ progress }) {
   return (
-    <nav className="navbar">
+    <nav
+      className="navbar"
+      style={{
+        transform: `translateY(-${progress * 100}%)`,
+      }}
+    >
       <h2 className="logo">YourName</h2>
 
       <div className="nav-links">

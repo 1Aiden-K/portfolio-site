@@ -1,7 +1,22 @@
 footer {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px;
   color: var(--text);
   border-top: var(--border-width) solid var(--text);
   border-bottom: var(--border-width) solid var(--text);
+}
+
+@media (max-width: 850px) {
+  footer {
+    flex-direction: column;
+    gap: var(--gap-md);
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

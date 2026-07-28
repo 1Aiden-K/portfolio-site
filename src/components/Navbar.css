@@ -1,6 +1,9 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -9,6 +12,8 @@
   background: var(--background);
   border-bottom: var(--border-width) solid var(--text);
   border-top: var(--border-width) solid var(--text);
+
+  will-change: transform;
 }
 
 .logo {
