@@ -1,0 +1,23 @@
+.tech-list {
+  display: flex;
+  gap: var(--gap-sm);
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tech-list span,
+.skills span {
+  font-family: var(--font-body);
+  background: var(--background);
+  color: var(--text);
+  border: var(--border-width) solid var(--text);
+  padding: 8px 12px;
+  border-radius: var(--pill-radius);
+  font-size: 0.9rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

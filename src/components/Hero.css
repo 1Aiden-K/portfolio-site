@@ -1,0 +1,54 @@
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: var(--section-padding) var(--content-padding);
+}
+
+.eyebrow {
+  color: var(--text);
+  font-family: var(--font-accent);
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-family: var(--font-header);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero-text {
+  max-width: 650px;
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.hero-text,
+.section > p,
+.project-card p,
+footer {
+  font-family: var(--font-body);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--gap-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+  }
+}

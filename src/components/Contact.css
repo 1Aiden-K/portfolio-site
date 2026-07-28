@@ -1,0 +1,23 @@
+.contact-links a {
+  font-family: var(--font-body);
+}
+
+.contact-links {
+  display: flex;
+  gap: var(--gap-md);
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  background: var(--text);
+  color: var(--background);
+  padding: 12px 18px;
+  border-radius: var(--pill-radius);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.contact-links a:hover {
+  background: var(--accent);
+}
