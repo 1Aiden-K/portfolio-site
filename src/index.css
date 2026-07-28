@@ -5,7 +5,10 @@
   --accent: #A72608;
 
   /* Typography */
-  --font-body: Georgia, "Times New Roman", Times, serif;
+  --font-logo: "Gourmand", serif;
+  --font-accent: "Courier New", Monospace;
+  --font-header: Georgia, serif;
+  --font-body: "Times New Roman", serif;
 
   /* Layout */
   --max-width: 1200px;

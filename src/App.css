@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-body);
   background: var(--background);
   color: var(--text);
 }
@@ -31,7 +31,7 @@ a {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 6vw;       /* Distance from the left edge */
+  left: 7vw;
   width: 1px;
   background: var(--text);
 }
@@ -51,6 +51,7 @@ a {
 
 .logo {
   color: var(--text);
+  font-family: var(--font-logo);
 }
 
 .nav-links {
@@ -61,6 +62,13 @@ a {
 .nav-links a {
   color: var(--text);
   font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a {
+  color: var(--text);
+  font-family: var(--font-accent);
+  font-weight: 700;
   transition: var(--transition);
 }
 
@@ -77,13 +85,15 @@ a {
 
 .eyebrow {
   color: var(--text);
-  font-weight: 700;
+  font-family: var(--font-accent);
+  font-weight: 500;
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .hero h1 {
+  font-family: var(--font-header);
   font-size: clamp(2.5rem, 7vw, 5rem);
   line-height: 1.05;
   margin-bottom: 24px;
@@ -101,6 +111,13 @@ a {
   margin-bottom: 32px;
 }
 
+.hero-text,
+.section > p,
+.project-card p,
+footer {
+  font-family: var(--font-body);
+}
+
 .hero-buttons {
   display: flex;
   gap: var(--gap-md);
@@ -112,6 +129,7 @@ a {
   border-radius: var(--pill-radius);
   font-weight: 700;
   transition: var(--transition);
+  font-family: var(--font-body);
 }
 
 .primary {
@@ -142,6 +160,17 @@ a {
   font-size: 2.2rem;
   margin-bottom: 24px;
   color: var(--text);
+}
+
+.section h2,
+.project-card h3 {
+  font-family: var(--font-header);
+}
+
+.contact-links a,
+.tech-list span,
+.skills span {
+  font-family: var(--font-body);
 }
 
 .section > p {
@@ -182,6 +211,7 @@ a {
 }
 
 .project-card a {
+  font-family: var(--font-accent);
   color: var(--text);
   font-weight: 700;
 }
@@ -239,6 +269,12 @@ footer {
   color: var(--text);
   border-top: var(--border-width) solid var(--text);
   border-bottom: var(--border-width) solid var(--text);
+}
+
+@media (max-width: 1000px) {
+  .content::before {
+    left: 6.5vw;
+  }
 }
 
 @media (max-width: 850px) {
