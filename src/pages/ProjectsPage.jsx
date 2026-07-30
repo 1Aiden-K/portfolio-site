@@ -1,10 +1,8 @@
-import Projects from "../components/HomePage/ProjectPreview";
+import Projects from "../components/ProjectsPage/Projects";
 
 export default function ProjectsPage() {
   return (
     <>
-      <Projects />
-      <Projects />
       <Projects />
     </>
   );
