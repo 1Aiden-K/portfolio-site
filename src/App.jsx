@@ -1,21 +1,18 @@
 import { useRef } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-import Hero from "./components/Hero.jsx";
-import About from "./components/About.jsx";
-import Projects from "./components/Projects.jsx";
-import Skills from "./components/Skills.jsx";
-import Contact from "./components/Contact.jsx";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import navbarScrollHiding from "./hooks/navbarScrollHiding.js";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+
+import navbarScrollHiding from "./hooks/navbarScrollHiding";
 import useNavbarPaddingScroll from "./hooks/navbarPaddingScroll";
 
-
 function App() {
-  //for header animations
   const footerRef = useRef(null);
 
   const progress = navbarScrollHiding(footerRef);
@@ -30,11 +27,10 @@ function App() {
       <Navbar progress={progress} />
 
       <main className="content">
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
       </main>
 
       <Footer ref={footerRef} />

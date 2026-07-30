@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = forwardRef(function Footer(props, ref) {
@@ -7,10 +8,10 @@ const Footer = forwardRef(function Footer(props, ref) {
       <p>© 2026 Your Name. All rights reserved.</p>
 
       <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/projects">Resume</NavLink>
+        <NavLink to="/projects">Experience</NavLink>
       </div>
     </footer>
   );
