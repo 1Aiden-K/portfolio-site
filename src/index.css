@@ -7,7 +7,7 @@
   /* Typography */
   --font-logo: "Gourmand", serif;
   --font-accent: "Courier New", Monospace;
-  --font-header: Georgia, serif;
+  --font-header: "Georgia", serif;
   --font-body: "Times New Roman", serif;
 
   /* Layout */
@@ -29,6 +29,7 @@
   /* Animation */
   --transition-speed: 0.2s;
   --transition: all var(--transition-speed) ease;
+  --theme-transition: 250ms ease;
 
   /* Misc */
   color-scheme: light;
@@ -75,4 +76,11 @@ select {
 
 #root {
   min-height: 100vh;
+}
+
+:root[data-theme="dark"] {
+  --background: #2A2D34;
+  --text: #f8f2dc;
+
+  color-scheme: dark;
 }

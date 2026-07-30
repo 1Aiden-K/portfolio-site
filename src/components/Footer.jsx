@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
+import ThemeToggle from "./ThemeToggle";
 
 const Footer = forwardRef(function Footer(props, ref) {
   return (
@@ -12,6 +13,7 @@ const Footer = forwardRef(function Footer(props, ref) {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/projects">Resume</NavLink>
         <NavLink to="/projects">Experience</NavLink>
+        <ThemeToggle />
       </div>
     </footer>
   );
