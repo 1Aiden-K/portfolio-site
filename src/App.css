@@ -25,22 +25,19 @@ a {
   text-decoration: none;
 }
 
-.site {
-  min-height: 100vh;
-}
-.content {
-  position: relative;
-  padding-top: 90px;
+.pageTitle {
+  font-size: 2.6rem;
+  margin-bottom: 0px;
+  color: var(--text);
+  font-family: var(--font-header);
 }
 
-.content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 7vw;
-  width: 1px;
-  background: var(--text);
+.subTitle {
+  font-size: 1rem;
+  margin-bottom: 80px;
+  color: var(--text);
+  font-family: var(--font-accent);
+  font-weight: 500;
 }
 
 .btn {
@@ -60,15 +57,22 @@ a {
   background: var(--accent);
 }
 
-.secondary {
-  background: transparent;
-  border: var(--border-width) solid var(--text);
-  color: var(--text);
+.site {
+  min-height: 100vh;
+}
+.content {
+  position: relative;
+  padding-top: 90px;
 }
 
-.secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7vw;
+  width: 1px;
+  background: var(--text);
 }
 
 .section {
@@ -79,9 +83,6 @@ a {
   font-size: 2.2rem;
   margin-bottom: 24px;
   color: var(--text);
-}
-
-.section h2 {
   font-family: var(--font-header);
 }
 

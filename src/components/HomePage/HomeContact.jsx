@@ -4,11 +4,6 @@ function Contact() {
     return (
         <section id="contact" className="section contact">
             <h2>Contact</h2>
-            <p>
-                Interested in working together? Send me a message or connect with me
-                online.
-            </p>
-
             <div className="contact-links">
                 <a href="mailto:your.email@example.com">Email</a>
                 <a

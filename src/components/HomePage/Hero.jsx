@@ -1,27 +1,25 @@
 import "./Hero.css";
-
+import { Link } from "react-router-dom";
 
 function Hero() {
     return(
         <section className="hero">
           <div>
-            <p className="eyebrow">Frontend Developer</p>
+            <p className="eyebrow">Classical and Quantum Computing</p>
             <h1>
-              Hi, I’m <span>Your Name</span>.
-              <br />
-              I build clean, modern web experiences.
+              <span>portfolio</span>Website
             </h1>
             <p className="hero-text">
-              I create responsive websites and applications using React,
-              JavaScript, and modern web technologies.
+              ECE + Phsyics @ Duke
             </p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn primary">
+              <Link to="/projects" className="btn primary">
                 View Projects
-              </a>
-              <a href="#contact" className="btn secondary">
-                Contact Me
-              </a>
+              </Link>
+
+              <Link to="/contact" className="btn secondary">
+                &nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;
+              </Link>
             </div>
           </div>
         </section>

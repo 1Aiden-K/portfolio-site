@@ -8,10 +8,39 @@
 .eyebrow {
   color: var(--text);
   font-family: var(--font-accent);
-  font-weight: 500;
+  font-size: large;
+  font-weight: 501;
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: var(--pill-radius);
+  font-weight: 700;
+  transition: var(--transition);
+  font-family: var(--font-body);
+}
+
+.primary {
+  background: var(--text);
+  color: var(--background);
+}
+
+.primary:hover {
+  background: var(--accent);
+}
+
+.secondary {
+  background: transparent;
+  border: var(--border-width) solid var(--text);
+  color: var(--text);
+}
+
+.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .hero h1 {
