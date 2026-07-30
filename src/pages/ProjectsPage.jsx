@@ -1,5 +1,11 @@
-import Projects from "../components/Projects";
+import Projects from "../components/HomePage/ProjectPreview";
 
 export default function ProjectsPage() {
-  return <Projects />;
+  return (
+    <>
+      <Projects />
+      <Projects />
+      <Projects />
+    </>
+  );
 }

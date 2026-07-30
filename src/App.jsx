@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -21,6 +22,11 @@ function App() {
     maxPadding: 24,
     scrollDistance: 100,
   });
+
+  //prevents flash loading
+  useEffect(() => {
+    document.body.classList.add("theme-transition");
+  }, []);
 
   return (
     <div className="site">

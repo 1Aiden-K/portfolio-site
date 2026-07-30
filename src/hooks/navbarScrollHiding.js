@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
-export default function navbarScrollHiding(footerRef) {
+export default function useNavbarScrollHiding(footerRef) {
   const [progress, setProgress] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,10 +18,12 @@ export default function navbarScrollHiding(footerRef) {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // Run on mount and whenever the route changes
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [footerRef]);
+  }, [footerRef, location.pathname]);
 
   return progress;
 }

@@ -1,8 +1,8 @@
 :root {
   /* Colors */
+  --accent: #A72608;
   --background: #f8f2dc;
   --text: #2A2D34;
-  --accent: #A72608;
 
   /* Typography */
   --font-logo: "Gourmand", serif;
@@ -76,6 +76,13 @@ select {
 
 #root {
   min-height: 100vh;
+}
+
+:root[data-theme="light"] {
+  --background: #f8f2dc;
+  --text: #2A2D34;
+
+  color-scheme: light;
 }
 
 :root[data-theme="dark"] {
