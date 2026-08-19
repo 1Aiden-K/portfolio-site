@@ -5,8 +5,7 @@
   margin-bottom: 20px;
 }
 
-.tech-list span,
-.skills span {
+.tech-list span {
   font-family: var(--font-body);
   background: var(--background);
   color: var(--text);
@@ -18,6 +17,81 @@
 
 .skills {
   display: flex;
+  align-items: center;
+
+  /* Small space between brackets and skills */
+  gap: 8px;
+
+  /* Keeps bracket aligned with the section content */
+  margin: 0;
+  padding: 0;
+
+  color: var(--accent);
+}
+
+
+/* Skill names */
+.skills-list {
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+
+  gap: 12px 20px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.skill {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+  /* Skill names */
+  color: var(--text);
+}
+
+
+.comma {
+  margin-left: 3px;
+
+  /* Commas */
+  color: var(--accent);
+}
+
+
+.bracket {
+  font-family: var(--font-accent);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+
+  /* Brackets */
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    gap: 5px;
+  }
+
+  .skills-list {
+    gap: 8px 14px;
+  }
+
+  .skill {
+    font-size: 1rem;
+  }
+
+  .bracket {
+    font-size: 2.5rem;
+  }
+}
+
+/* Correct the built-in whitespace on the [ glyph */
+.bracket:first-child {
+  margin-left: -12px;
 }

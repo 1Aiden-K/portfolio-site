@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  padding: 56px 0px;
+  padding: 56px 0;
 }
 
 .projectTitle span {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .project-card {
@@ -45,6 +45,63 @@
   margin-bottom: 20px;
 }
 
+
+/* Project technologies */
+
+.project-tech {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0 0 20px;
+  padding: 0;
+
+  color: var(--accent);
+}
+
+.project-tech-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px 20px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.project-tech-item {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+  color: var(--text);
+}
+
+.project-tech-comma {
+  margin-left: 3px;
+  color: var(--accent);
+}
+
+.project-tech-bracket {
+  font-family: var(--font-accent);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+
+  color: var(--accent);
+}
+
+/* Correct the built-in whitespace on the [ glyph */
+.project-tech-bracket:first-child {
+  margin-left: -12px;
+}
+
+
+/* Github link */
+
 .project-link {
   font-family: var(--font-accent);
   color: var(--text);
@@ -55,8 +112,27 @@
   color: var(--accent);
 }
 
+
 @media (max-width: 850px) {
   .project-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-tech {
+    gap: 5px;
+  }
+
+  .project-tech-list {
+    gap: 8px 14px;
+  }
+
+  .project-tech-item {
+    font-size: 1rem;
+  }
+
+  .project-tech-bracket {
+    font-size: 2.5rem;
   }
 }

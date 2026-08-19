@@ -1,6 +1,6 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import projects from "../../data/projectList.jsx";
+import projects from "../../data/projectList.js";
 import "./ProjectPreview.css";
 
 function ProjectPreview() {
@@ -8,7 +8,9 @@ function ProjectPreview() {
     <section id="projects" className="section">
       <section className="spread">
         <h2>Projects</h2>
-        <Link to="/projects"><u>See all</u></Link>
+        <Link to="/projects">
+          <u>See all</u>
+        </Link>
       </section>
 
       <div className="project-grid">
@@ -25,10 +27,21 @@ function ProjectPreview() {
 
             <p>{project.description}</p>
 
-            <div className="tech-list">
-              {project.tech.map((tech) => (
-                <span key={tech}>{tech}</span>
-              ))}
+            <div className="project-tech">
+              <span className="project-tech-bracket">[</span>
+
+              <div className="project-tech-list">
+                {project.tech.map((tech, index) => (
+                  <span className="project-tech-item" key={tech}>
+                    {tech}
+                    {index < project.tech.length - 1 && (
+                      <span className="project-tech-comma">,</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+
+              <span className="project-tech-bracket">]</span>
             </div>
 
             <span className="project-link">View Project →</span>

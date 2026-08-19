@@ -1,8 +1,6 @@
 const projects = [
   {
-    title: <>
-      E <span>Commerce</span> Store
-    </>,
+    title: "E Commerce Store",
     date: "November 2025",
     description:
       "A web app that analyzes resumes and gives improvement suggestions using natural language processing.",
