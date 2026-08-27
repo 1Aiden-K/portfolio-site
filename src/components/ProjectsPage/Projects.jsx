@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section id="projects" className="section">
       <h1 className="pageTitle">Projects</h1>
-      <h1 className="subTitle">Full list of projects</h1>
+      <h1 className="subTitle">List of notable projects</h1>
 
       <div className="project-grid">
         {projects.map((project) => (

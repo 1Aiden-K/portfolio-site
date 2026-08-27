@@ -12,14 +12,14 @@ function Contact() {
         <div className="contactSection">
           <h3>Professional</h3>
 
-          <a href="mailto:your@email.com" className="email">
-            your@email.com
+          <a href="mailto:aiden.khanna@gmail.com" className="email">
+            aiden.khanna@gmail.com
           </a>
         </div>
 
         <div className="contactLinks">
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/aiden-c-khanna-2407a9326/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn primary"
@@ -28,7 +28,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/1Aiden-K"
               target="_blank"
               rel="noopener noreferrer"
               className="btn secondary"
@@ -39,17 +39,17 @@ function Contact() {
 
         {/* Work */}
         <div className="contactSection">
-          <h3>Work</h3>
-          <a href="mailto:work@email.com" className="email">
-            work@email.com
+          <h3>ACK Foundation</h3>
+          <a href="mailto:contact@ackfoundation.org" className="email">
+            contact@ackfoundation.org
           </a>
         </div>
 
         {/* Other */}
         <div className="contactSection">
-          <h3>Other</h3>
-          <a href="mailto:other@email.com" className="email">
-            other@email.com
+          <h3>Beyond the Sound</h3>
+          <a href="mailto:aiden.khanna@beyondthesound.net" className="email">
+            aiden.khanna@beyondthesound.net
           </a>
         </div>
 

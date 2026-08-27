@@ -27,3 +27,7 @@ h3 {
 .email:hover {
     color: var(--accent);
 }
+
+.contactContainer {
+    padding-bottom: 72px;
+}

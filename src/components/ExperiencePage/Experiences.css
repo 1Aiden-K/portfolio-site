@@ -7,6 +7,10 @@
   border-top: var(--border-width) solid var(--text);
 }
 
+.experienceItems {
+  padding-bottom: 72px;
+}
+
 .experienceHeading {
   display: flex;
   justify-content: space-between;
