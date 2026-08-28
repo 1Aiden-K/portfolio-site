@@ -1,5 +1,6 @@
 const skills = [
   "Quantum Computing",
+  "Artificial Intelligence",
   "Qiskit",
   "Python",
   "C++",

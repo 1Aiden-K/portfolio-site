@@ -1,19 +1,19 @@
 const works = [
   {
-    title: "Project One",
-    link: "https://example.com",
-    displayLink: "example.com",
+    title: "ACK Foundation",
+    link: "https://ackfoundation.org",
+    displayLink: "ackfoundation.org",
     description:
-      "A short description of the project, what it does, and what makes it interesting.",
-    image: "/images/project-one.png",
+      "Founder and president of non-profit ACK foundation. Raised over 80,000USD for cancer research, art engagement, and environmentalism through online donations and hosted events.",
+    image: "/ackFoundation.png",
   },
   {
-    title: "Project Two",
-    link: "https://example.org",
-    displayLink: "example.org",
+    title: "Beyond the Sound",
+    link: "https://beyondthesound.net",
+    displayLink: "beyondthesound.net",
     description:
-      "A short description of the second project, including its purpose and the work that went into building it.",
-    image: "/images/project-two.png",
+      "Founder and chief editor of Beyond the Sound, a multimedia publication focused on music critique and experimental commentary. Published 30+ articles and conducted interviews with musicians and industry professionals.",
+    image: "/beyondTheSound.png",
   },
 ];
 

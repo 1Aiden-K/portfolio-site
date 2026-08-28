@@ -16,7 +16,7 @@ const projects = [
       "Creates, runs, and grades various AI models against user-made custom use cases and criteria.",
     details: 
       "Uses AI-generated benchmark tasks and rubrics made by user-selected \"assessor\" models are used to test and grade user-selected \"assessee\" models and neatly displays results.",
-    tech: ["OpenRouter", "React", "Python"],
+    tech: ["OpenRouter", "Artificial Intelligence", "Python"],
     link: "https://github.com/zhenkog78028/Benchmarking",
   },
   {
