@@ -48,6 +48,7 @@ function App() {
       </main>
 
       <Footer ref={footerRef} />
+      <Analytics />
     </div>
   );
 }
