@@ -1,13 +1,11 @@
-import "./About.css";
-
 function About() {
     return (
         <section id="about" className="section">
-            <h2>About Me</h2>
+            <h2>About</h2>
             <p>
-            I am a web developer focused on building user-friendly digital
-            products. I enjoy solving problems, designing clean interfaces, and
-            turning ideas into polished websites.
+            // First-year ECE + Physics student with a compulsion to understand systems deeply<br />
+            // Couldn't be satisfied with just classical computers, so I went quantum<br />
+            // Still very much interested in the classical kind
             </p>
         </section>
     )

@@ -1,0 +1,33 @@
+h3 {
+  font-family: var(--font-header);
+  font-size: x-large;
+  padding-top: 36px;
+  padding-bottom: 0px;
+}
+
+.contactSection{
+    padding-bottom: 36px;
+}
+
+.contactLinks{
+    padding-bottom: 36px;
+}
+
+.contactLinks a{
+    margin-right: 24px;
+}
+
+.email{
+    display: block;
+    font-size: medium;
+    font-family: var(--font-body);
+    color: var(--text);
+}
+
+.email:hover {
+    color: var(--accent);
+}
+
+.contactContainer {
+    padding-bottom: 72px;
+}

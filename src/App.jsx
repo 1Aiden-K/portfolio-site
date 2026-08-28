@@ -9,6 +9,9 @@ import Footer from "./components/Footer";
 
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
+import ExperiencePage from "./pages/ExperiencePage";
+import OtherWorkPage from "./pages/OtherWorkPage";
 
 import navbarScrollHiding from "./hooks/navbarScrollHiding";
 import useNavbarPaddingScroll from "./hooks/navbarPaddingScroll";
@@ -36,6 +39,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/other-work" element={<OtherWorkPage />} />
         </Routes>
       </main>
 

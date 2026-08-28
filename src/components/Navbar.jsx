@@ -11,14 +11,15 @@ function Navbar({ progress }) {
       }}
     >
       <h2 className="logo">
-        <Link to="/">YourName</Link>
+        <Link to="/">Aiden <span>C</span> Khanna</Link>
       </h2>
 
       <div className="nav-links">
-        <NavLink to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</NavLink>
-        <NavLink to="/projects" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Projects</NavLink>
-        <NavLink to="/experience" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Experience</NavLink>
-        <NavLink to="/other-work" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Other Work</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/experience">Experience</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/other-work">Other Work</NavLink>
       </div>
     </nav>
   );

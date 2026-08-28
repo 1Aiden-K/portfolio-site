@@ -2,21 +2,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+  padding: 0px 0;
 }
 
-.spread {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.spread a:hover {
+.projectTitle span {
   color: var(--accent);
 }
-
-
-/* Project cards */
 
 .project-card {
   display: block;
@@ -103,13 +94,13 @@
   color: var(--accent);
 }
 
-/* Correct built-in whitespace on the opening bracket */
+/* Correct the built-in whitespace on the [ glyph */
 .project-tech-bracket:first-child {
   margin-left: -12px;
 }
 
 
-/* Project link */
+/* Github link */
 
 .project-link {
   font-family: var(--font-accent);
@@ -121,8 +112,6 @@
   color: var(--accent);
 }
 
-
-/* Responsive */
 
 @media (max-width: 850px) {
   .project-grid {
