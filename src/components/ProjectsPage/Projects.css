@@ -1,8 +1,9 @@
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   padding: 0px 0;
+  align-items: stretch;
 }
 
 .projectTitle span {
@@ -10,8 +11,9 @@
 }
 
 .project-card {
-  display: block;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: inherit;
 
   background: var(--background);
@@ -102,18 +104,28 @@
 
 /* Github link */
 
+.project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: auto;
+}
+
 .project-link {
   font-family: var(--font-accent);
   color: var(--text);
   font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition);
 }
 
-.project-card:hover .project-link {
+.project-link:hover {
   color: var(--accent);
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 1150px) {
   .project-grid {
     grid-template-columns: 1fr;
   }

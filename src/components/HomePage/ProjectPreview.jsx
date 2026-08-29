@@ -14,39 +14,54 @@ function ProjectPreview() {
       </section>
 
       <div className="project-grid">
-        {projects.slice(0, 3).map((project) => (
-          <a
-            className="project-card"
-            key={project.title}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3>{project.title}</h3>
-            <h4>{project.date}</h4>
+        {projects.slice(0, 3).map((project) => {
+          const projectLinks =
+            Array.isArray(project.links) && project.links.length > 0
+              ? project.links
+              : [{ label: "View Project →", url: project.link }].filter(
+                  (link) => link.url,
+                );
 
-            <p>{project.description}</p>
+          return (
+            <article className="project-card" key={project.title}>
+              <h3>{project.title}</h3>
+              <h4>{project.date}</h4>
 
-            <div className="project-tech">
-              <span className="project-tech-bracket">[</span>
+              <p>{project.description}</p>
 
-              <div className="project-tech-list">
-                {project.tech.map((tech, index) => (
-                  <span className="project-tech-item" key={tech}>
-                    {tech}
-                    {index < project.tech.length - 1 && (
-                      <span className="project-tech-comma">,</span>
-                    )}
-                  </span>
-                ))}
+              <div className="project-tech">
+                <span className="project-tech-bracket">[</span>
+
+                <div className="project-tech-list">
+                  {project.tech.map((tech, index) => (
+                    <span className="project-tech-item" key={tech}>
+                      {tech}
+                      {index < project.tech.length - 1 && (
+                        <span className="project-tech-comma">,</span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+
+                <span className="project-tech-bracket">]</span>
               </div>
 
-              <span className="project-tech-bracket">]</span>
-            </div>
-
-            <span className="project-link">View Project →</span>
-          </a>
-        ))}
+              <div className="project-links">
+                {projectLinks.map(({ label, url }) => (
+                  <a
+                    className="project-link"
+                    key={`${project.title}-${label}`}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
