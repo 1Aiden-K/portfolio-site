@@ -5,7 +5,7 @@ const projects = [
     description:
       "A utility library operating on top of qiskit.circuit providing higher level abstraction for constructing and manipulating quantum circuits.",
     details:
-      "Provides reusable operations for preparing, transforming, correcting, operating on, and measuring quantum states within circuits, reducing repetitive circuit construction.",
+      "Provides reusable operations for preparing, transforming, correcting, operating on, and measuring quantum states within circuits, reducing repetitive circuit construction. The library is publishedpon PyPI, integrating CI with pytest, Ruff, and Pyright for automated testing, linting, and static type checking.",
     tech: ["Quantum Computing", "Qiskit", "Python"],
     links: [
       {
@@ -22,9 +22,9 @@ const projects = [
     title: "Custom AI Benchmarking",
     date: "May 2026 - August 2026",
     description:
-      "Creates, runs, and grades various AI models against user-made custom use cases and criteria.",
+      "A full-stack benchmarking application that creates, runs, and grades various AI models against user-made custom use cases and criteria.",
     details:
-      "Uses AI-generated benchmark tasks and rubrics made by user-selected \"assessor\" models are used to test and grade user-selected \"assessee\" models and neatly displays results.",
+      "Uses AI-generated benchmark tasks and rubrics made by user-selected \"assessor\" models are used to test and grade user-selected \"assessee\" models and neatly displays results. Provides easy benchmarking capability for models across companies by utilizing OpenRouter.",
     tech: ["OpenRouter", "AI", "Python"],
     links: [
       {
@@ -49,8 +49,8 @@ const projects = [
     ],
   },
   {
-    title: "Metar Tracker",
-    date: "October 2023",
+    title: "METAR Tracker",
+    date: "September 2023 - October 2023",
     description:
       "IoT device protoype providing real-time updates of the METAR status of the selected airport.",
     details:
