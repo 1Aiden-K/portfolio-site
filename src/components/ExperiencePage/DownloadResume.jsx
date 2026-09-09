@@ -6,7 +6,7 @@ function ResumeDownloadButton() {
       <h1 className="pageTitle">Experience</h1>
       <h1 className="subTitle">Work experience and resume</h1>
       <a
-        href="/resume.pdf"
+        href="/AidenKhanna-Resume2026.pdf"
         download="AidenKhanna-Resume2026.pdf"
         className="btn primary"
       >
