@@ -1,4 +1,4 @@
-.project-grid {
+.project-grid-prev {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
@@ -138,7 +138,7 @@
 /* Responsive */
 
 @media (max-width: 850px) {
-  .project-grid {
+  .project-grid-prev {
     grid-template-columns: 1fr;
   }
 }

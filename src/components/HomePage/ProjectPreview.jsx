@@ -13,7 +13,7 @@ function ProjectPreview() {
         </Link>
       </section>
 
-      <div className="project-grid">
+      <div className="project-grid-prev">
         {projects.slice(0, 3).map((project) => {
           const projectLinks =
             Array.isArray(project.links) && project.links.length > 0
