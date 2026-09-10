@@ -3,9 +3,9 @@ function About() {
         <section id="about" className="section">
             <h2>About</h2>
             <p>
-            // First-year ECE + Physics student with a compulsion to understand systems deeply<br />
-            // Couldn't be satisfied with just classical computers, so I went quantum<br />
-            // Still very much interested in the classical kind
+            // First-year ECE + Physics student studying both classical and quantum computing<br />
+            // Curious about how technologies work from first principles<br />
+            // Best skill: learning new things deeply and quickly
             </p>
         </section>
     )
