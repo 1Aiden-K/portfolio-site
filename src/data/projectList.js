@@ -6,7 +6,7 @@ const projects = [
       "A utility library operating on top of qiskit.circuit providing higher level abstraction for constructing and manipulating quantum circuits.",
     details:
         "Provides reusable operations for preparing, transforming, correcting, operating on, and measuring quantum states within circuits, reducing repetitive circuit construction. The library is published on PyPI, integrating CI with pytest, Ruff, and Pyright for automated testing, linting, and static type checking.",
-    tech: ["Quantum Computing", "Qiskit", "Python"],
+    tech: ["Quantum Circuits", "Qiskit", "Python"],
     links: [
       {
         label: "GitHub",

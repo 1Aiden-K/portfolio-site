@@ -1,13 +1,15 @@
 const skills = [
-  "Quantum Computing",
-  "Artificial Intelligence",
-  "Qiskit",
+  "Quantum Circuits",
   "Python",
+  "Digital Circuits",
+  "Qiskit",
   "C++",
-  "IoT",
+  "Firmware Development",
+  "Artificial Intelligence",
   "Java",
   "React",
-  "Microcode"
+  "Microcode",
+  "PCB Design",
 ];
 
 export default skills;
