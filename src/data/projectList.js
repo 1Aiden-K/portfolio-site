@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Quantum Capacitated Vehicle Routing Optimization",
+    title: "Quantum Vehicle Routing Optimization",
     date: "October 2026",
     description:
       "Developed classical and quantum approaches to the Capacitated Vehicle Routing Problem (CVRP) using compact QUBO formulations and analog neutral-atom optimization.",
