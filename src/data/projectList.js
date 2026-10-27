@@ -1,5 +1,24 @@
 const projects = [
   {
+    title: "Quantum Optimization of Capacitated Vehicle Routing",
+    date: "October 2026",
+    description:
+      "Developed classical quantum approaches to the Capacitated Vehicle Routing Problem (CVRP) using compact QUBO formulations and analog neutral-atom optimization.",
+    details:
+        "Devised a slack-free encoding that reduced the number of required binary variables by 71.4%, replacing explicit capacity constraints with a quadratic load-balancing penalty. Used Python, Pulser, and Pasqal's quantum emulators to simulate neutral-atom systems, benchmarking 20 problem instances against exact classical solutions and random sampling. Achieved 96.47% feasibility and 63.97% clustering-optimum sampling probabilities while investigating limitations in Hamiltonian fidelity, constraint enforcement, and scalability.",
+    tech: ["QUBO Optimization", "Analog Neutral Atoms", "Pulser"],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/1Aiden-K/slack-free-quantum-qubo-model",
+      },
+      {
+        label: "Manuscript",
+        url: "https://www.aidenkhanna.com/papers/CVRP-Analog-Neutral-Atom-Clustering-with-Slack-Free-Encoding.pdf",
+      },
+    ],
+  },
+  {
     title: "Qiskit Circuit Utility Library",
     date: "May 2026 - August 2026",
     description:
@@ -39,7 +58,7 @@ const projects = [
     description:
       "The game of tetris, recreated in Java with custom graphical and game engine.",
     details:
-      "Menu and window made with JFrame, game-area graphics and game logic created manually.",
+      "Menu and window made with JFrame, game-area graphics, and game logic created manually. ",
     tech: ["Java", "JFrame", "Graphics"],
     links: [
       {

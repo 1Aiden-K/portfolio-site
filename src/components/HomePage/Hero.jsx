@@ -7,7 +7,7 @@ function Hero() {
           <div>
             <p className="eyebrow">Classical and Quantum Computing</p>
             <h1>
-              <span>portfolio</span>Website
+              my<span>Portfolio</span>Website
             </h1>
             <p className="hero-text">
               ECE + Phsyics @ Duke
