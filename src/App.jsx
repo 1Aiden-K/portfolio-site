@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./App.css";
 
@@ -46,6 +47,7 @@ function App() {
       </main>
 
       <Footer ref={footerRef} />
+      <Analytics />
     </div>
   );
 }
