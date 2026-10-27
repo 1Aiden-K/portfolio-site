@@ -3,10 +3,10 @@ const projects = [
     title: "Quantum Optimization of Capacitated Vehicle Routing",
     date: "October 2026",
     description:
-      "Developed classical quantum approaches to the Capacitated Vehicle Routing Problem (CVRP) using compact QUBO formulations and analog neutral-atom optimization.",
+      "Developed classical and quantum approaches to the Capacitated Vehicle Routing Problem (CVRP) using compact QUBO formulations and analog neutral-atom optimization.",
     details:
-        "Devised a slack-free encoding that reduced the number of required binary variables by 71.4%, replacing explicit capacity constraints with a quadratic load-balancing penalty. Used Python, Pulser, and Pasqal's quantum emulators to simulate neutral-atom systems, benchmarking 20 problem instances against exact classical solutions and random sampling. Achieved 96.47% feasibility and 63.97% clustering-optimum sampling probabilities while investigating limitations in Hamiltonian fidelity, constraint enforcement, and scalability.",
-    tech: ["QUBO Optimization", "Analog Neutral Atoms", "Pulser"],
+        "Devised a slack-free encoding that reduced binary variables by 71.4%, replacing explicit capacity constraints with a quadratic load-balancing penalty. Used Python, Pulser, and Pasqal's quantum emulators to simulate neutral-atom systems, benchmarking CVRP instances against classical solutions and random sampling. Achieved 96.47% feasibility and 63.97% clustering-optimum sampling probabilities while investigating limitations in Hamiltonian fidelity, constraint enforcement, and scalability.",
+    tech: ["QUBO Optimization", "Analog Neutral-Atoms", "Pulser"],
     links: [
       {
         label: "GitHub",
